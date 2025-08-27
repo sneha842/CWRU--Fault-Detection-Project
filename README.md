@@ -1,16 +1,27 @@
-# Bearing Fault Detection using ML
+# CWRU Bearing Fault Detection  
 
-This project detects types of bearing faults using vibration signal data (CWRU dataset).
+🔹 A Machine Learning project for **bearing fault diagnosis** using the Case Western Reserve University (CWRU) dataset.  
+🔹 Goal: Predict machine faults (healthy vs faulty) using vibration signals.  
+🔹 Models used: Logistic Regression, Decision Tree, Random Forest, SVM, KNN.  
+🔹 Evaluation: ROC Curve, Confusion Matrix, Accuracy, Precision, Recall, F1-score.  
 
-## Files
-- `bearing_fault_detection.ipynb` – main notebook
-- `features.csv` – extracted features
-- `raw/` – contains original `.mat` vibration signal files
+## ⚙️ Tech Stack  
+- Python, Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
 
-## How to Run
-1. Clone the repo
-2. Open notebook in Jupyter
-3. Run all cells
+## 📊 Results  
+- **Logistic Regression** → Accuracy ~ 85%  
+- **Decision Tree** → Accuracy ~ 89%  
+- **Random Forest** → Accuracy ~ 93% (Best)  
+- **SVM** → Accuracy ~ 91%  
+- **KNN** → Accuracy ~ 88%  
 
-## 📌 Dataset
-CWRU Bearing Data: [link](https://www.kaggle.com/datasets/brjapon/cwru-bearing-datasets)
+✅ **Random Forest** gave the most reliable performance for bearing fault detection.  
+
+## 🚀 How to Run  
+```bash
+git clone https://github.com/sneha842/CWRU--Fault-Detection-Project.git
+cd CWRU--Fault-Detection-Project
+pip install -r requirements.txt
+jupyter notebook
